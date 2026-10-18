@@ -1,0 +1,13 @@
+{
+    "pythonPath": "C:\\msys64\\ucrt64\\bin\\python.exe",
+    "venvPath": "",
+    "executionEnvironments": [
+        {
+            "root": "backend",
+            "extraPaths": [
+                "C:\\msys64\\ucrt64\\lib\\python3.12\\site-packages"
+            ]
+        }
+    ],
+    "reportMissingImports": false
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acoustic Leak Detector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="glass-panel">
+            <div class="logo">
+                <div class="pulse-ring"></div>
+                <h1>Acoustic<span class="highlight">Guard</span></h1>
+            </div>
+            <div class="sys-status">
+                <span class="status-indicator online"></span>
+                <span>SYSTEM ONLINE</span>
+            </div>
+        </header>
+
+        <main>
+            <section class="dashboard-left">
+                <div class="card glass-panel">
+                    <h2>Pipeline Network</h2>
+                    <p class="subtitle">Live Acoustic Monitoring</p>
+                    <div id="sensor-grid" class="sensor-grid">
+                        <!-- Sensor cards will be injected here via JS -->
+                        <div class="loader-spinner"></div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="dashboard-right">
+                <div class="card glass-panel alerts-panel">
+                    <h2>Live Alerts</h2>
+                    <div class="alerts-container" id="alerts-container">
+                        <div class="empty-alerts">No active leaks detected.</div>
+                    </div>
+                </div>
+                
+                <div class="card glass-panel stats-panel">
+                    <h2>System Diagnostics</h2>
+                    <div class="stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-value" id="active-sensors">0</span>
+                            <span class="stat-label">Active Sensors</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-value" id="total-leaks">0</span>
+                            <span class="stat-label">Detected Leaks</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
